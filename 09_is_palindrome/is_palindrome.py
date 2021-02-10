@@ -21,3 +21,12 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    lower_cased = phrase.lower()
+    formatted_string = lower_cased.replace(" ", "")
+
+    if formatted_string == formatted_string[::-1]:
+        return True
+    else:
+        return False
+
+
